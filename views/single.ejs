@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External HTML Content</title>
+    <style>
+        /* Style the iframe to fill the entire viewport */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh; /* Use 100% of the viewport height */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="externalFrame" srcdoc="<%= externalHTML %>"></iframe>
+</body>
+</html>
